@@ -80,7 +80,12 @@ var App = React.createClass ({
         <input type="submit" onClick={this.search} value="Buscar"/>
         <br></br>
         { this.state.reservas.map(function(item) {
-            return <div>{item} <hr/></div>
+            return <div>ID: {item.id_reservation} <br/>
+            Restaurante: {item.restaurant} <br/>
+            Fecha Inicial: {item.initialDate} <br/>
+            Fecha Final: {item.finalDate} <br/>
+            Invitados: {item.guests} <br/>
+          <hr/></div>
           })
         }
 
