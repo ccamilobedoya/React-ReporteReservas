@@ -1,5 +1,117 @@
+@import "https://fonts.googleapis.com/css?family=Josefin+Sans|Lato";
+html {
+  height: 100%;
+}
 body {
+  min-height: 100%;
+  min-width: 320px;
+  font-family: "Lato", sans-serif;
+  color: #3C0403;
+  background-image: url("img/city-restaurant-table-pavement2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.content {
+  position: relative;
+  background-color: white;
+}
+
+.centered-flex {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  align-content: center;
+  justify-content: center;
+  padding: 35px;
+}
+
+.bg-c1 {
+  background-color: #D8C197;
+}
+
+.bg-c2 {
+  background-color: #C8A667;
+}
+
+.bg-c4 {
+  background-color: #531604;
+}
+
+.bg-c5 {
+  background-color: #3C0403;
+}
+
+.bg-w {
+  background-color: #f1f1f1;
+}
+
+.bg-g {
+  background-color: #212121;
+}
+
+select, input {
+  font-family: "Lato", sans-serif;
+  color: #3C0403;
+  display: block;
   margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  width: 100%;
+  font-size: 15px;
+  padding: 8px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin-bottom: 5px;
+  border: none;
+  border-bottom: solid 3px #C8A667;
+  transition: border 0.3s;
+  background-color: rgba(0, 0, 0, 0.02);
+}
+select:focus, input:focus {
+  outline: none;
+  border-bottom: solid 3px #3C0403;
+}
+input[type="submit"]{
+  margin-top: 15px;
+  border-bottom: solid 3px #3C0403;
+  transition: background-color 0.15s, color 0.15s;
+}
+input[type="submit"]:hover{
+  background-color: #3C0403;
+  color: #C8A667;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 300px;
+  align-content: center;
+  justify-content: center;
+  padding: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #D8C197;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 2px 18px -2px rgba(0, 0, 0, 0.9);
+}
+
+h4 {
+    color: #D8C197;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 48px;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+
+hr {
+  border: 0.3px solid #531604;
 }
